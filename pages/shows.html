@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/shows.css">
+    <title>Band site</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <nav class="navbar">
+      <div class="navbar__title">
+        <a href="./index.html"> <img src="../assets/Logo/Logo-bandsite.svg" alt="logo"></a>
+      </div>
+      <div class="navbar__list">
+        <a class="navbar__list-link active" href="../index.html">Biography</a>
+        <a class="navbar__list-link" href="./shows.html">Shows</a>
+      </div>
+    </nav>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  const navbarLinks = document.querySelectorAll(".navbar__list-link");
+
+  navbarLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      navbarLinks.forEach((l) => l.classList.remove("active"));
+      link.classList.add("active");
+    });
+  });
+});
+    </script>
+    <!-- for the nav higlight --> 
+    <main class="hero">
+    <div class="hero__bgwrapper"></div>
+    <div class="hero__text">
+    <p class="hero__header">Beautiful Beasts Album</p>
+    <div class="hero__headers">
+    <p class="hero__header-one">Queen of Yellow X</p>
+    <p class="hero__header-two">For The Strings</p>
+   </div>
+    <iframe class="hero__iframe" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1630787220&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </div>  
+    </main>
+    <section>
+        <div class="shows">
+            <div class="shows__heading">
+                <h2>Shows</h2>
+            </div>
+            <ul class="shows__title">
+                <li>DATE</li>
+                <li>VENUE</li>
+                <li>LOCATION</li>
+            </ul>
+            <div class="shows__details">
+             
+            </div>
+            <script src="../scripts/build-shows-page.js"></script>
+    </section>
+    <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__title">
+            <h2>Get in Touch</h2>
+          </div>
+          <div class="footer__icon">
+            <a href="https://www.instagram.com/"><img src="../assets/Icons/SVG/Icon-instagram.svg" alt="Instagram Icon"></a>
+            <a href="https://www.facebook.com/"><img src="../assets/Icons/SVG/Icon-facebook.svg" alt="facebook Icon"></a>
+            <a href="https://twitter.com/"><img src="../assets/Icons/SVG/Icon-twitter.svg" alt="Twitter Icon"></a>
+          </div>
+          <div class="footer__logo">
+            <h1>BANDSITE</h1>
+          </div>
+        </div>
+        <div class="footer__artist">
+          <div class="footer__artist1">
+            <h4>Cam Adams</h4>
+            <h4 class="footer-paddingmod">The Bees Knees Management</h4>
+            <p>503 Broadway Penthouse,</p>
+            <p class="footer-paddingmod footer-paramod">
+              New York, NY 10012, USA
+            </p>
+            <a class="footer-paddingmod" href="mailto:info@thebeesknees.com"
+              >info@thebeesknees.com</a
+            >
+          </div>
+          <div class="footer__artist2">
+            <h4>Pearl Gregg</h4>
+            <h4 class="footer-paddingmod">Limitless Artist Group</h4>
+            <p>Booking Agent for</p>
+            <p class="footer-paddingmod footer-paramod">
+              US / South America / Japan
+            </p>
+            <a class="footer-paddingmod" href="mailto:pearl.gregg@limitlessag.com"
+              >pearl.gregg@limitlessag.com</a
+            >
+          </div>
+          <div class="footer__artist3">
+            <h4>Carson Whyte</h4>
+            <h4 class="footer-paddingmod">ARCH Entertainment</h4>
+            <p>Booking Agent for</p>
+            <p class="footer-paddingmod footer-paramod">UK/ EU / AU</p>
+            <a class="footer-paddingmod" href="mailto:info@thebeesknees.com"
+              >info@thebeesknees.com</a
+            >
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <h2 class="footer-paddingmod">BANDSITE</h2>
+          <p class="footer-paddingmod">
+            Copyright The Bees Knees © 2021 All Rights Reserved
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
