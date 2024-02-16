@@ -35,16 +35,7 @@ async function displayComments() {
     const year = date.getFullYear();
     return `${day}/${month}/${year}`;
   }
-  // <div class="comment-section__wrapper">
-  //     <div class="comment-section__icon"></div>
-  //     <div class="comment-section__container">
-  //     <div class="comment-section__name-container">
-  //       <div class="comment-section__username">Aishwarya</div>
-  //       <div class="comment-section__date">19/12/1994</div>
-  //     </div>
-  //     <div class="comment-section__comment">What an amazing world to be in! I am in for a ride. etur veniam impedit nesciunt, rerum error! Expedita exercitationem nostrum eius dolore doloremque quasi nihil illum odio?</div>
-  //    </div>
-  //   </div>
+ 
   commentResponse.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
 
   for (let i = 0; i < commentResponse.length; i++) {
